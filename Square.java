@@ -1,3 +1,4 @@
+// Represents a square on the board, has a value, a row, and a column
 public class Square {
    int value;
    int row;
