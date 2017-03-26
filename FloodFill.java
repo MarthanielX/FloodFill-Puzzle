@@ -16,6 +16,7 @@ public class FloodFill{
       System.out.println("A move consistents of taking a block, consisting of square and all squares of the same");
       System.out.println("value that touch it vertically and horizontally, and incrementing or decrementing them.\n");
    
+      
       while (!board.won()){
          moveCount++;
          System.out.println(board);  
@@ -40,6 +41,16 @@ public class FloodFill{
       
       System.out.println(board.toString());
       System.out.println("\nCongratulations! You won the game in " + moveCount + " moves.");
+       
       
+      /*
+      while (!board.won() && moveCount < 10){
+         moveCount++;
+         System.out.println(board + "\n");
+         board.aIMove();
+      }
+      
+      System.out.println("The AI solved it in " + moveCount + " moves.");
+      */
    }
 }
